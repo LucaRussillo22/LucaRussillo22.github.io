@@ -1,0 +1,237 @@
+<html>
+   <head>
+      <title>Assistenza</title>
+      <link rel="icon" type="image/png " href="logoPulito.png">
+      <link rel="stylesheet" href="FileNuovo.css"/>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   </head>
+   <body>
+      <header>
+         <h1 class = "titolo" > <b>CAR.CARS SRLS</b> </h1>
+         <h5 class = "titolo" > Vendita auto, moto e noleggio </h5>
+         <div class = "container">
+            <div class="row accentramento">
+               <div class="col-3 btn btn-warning opacity-100"> <a href="NuovoFile.html"> <b>Home </a> </b> </div>
+               <div class="col-3 btn btn-warning opacity-100"> <a  href="sito concessionaria1.html"> <b>Lista veicoli </a> </b></div>
+               <div class="col-3 btn btn-warning opacity-100"> <a href="Assistenza.html"><b>Assistenza </a> </b></div>
+               <div class="col-3 btn btn-warning opacity-100"> <a href="Vendute.html"><b>Vendute </a> </b> </div>
+            </div>
+         </div>
+      </header>
+      <main>
+         <div class="container">
+            <div class="row">
+               <div class="col-6">
+                  <h3><b>Assistenza</b> </h3>
+                  <h6> Compila il modulo per prenotare un intervento.
+                     I campi contrassegnati con * sono obbligatori.
+                  </h6>
+               </div>
+               <div class="col-6">
+                  <h3 class="rosso">  <br>servizio clienti </br>
+                     <a class="rosso" href="tel:+39 3773789261">
+                     <b>📞+39 377 3789261</b>  </a> 
+                  </h3>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-6">
+                  <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label"> </label>
+                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome e cognome*">
+                  </div>
+               </div>
+               <div class="col-6">
+                  <div class="mb-3">
+                     <label for="exampleInputEmail1" class="form-label">Email </label>
+                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                     <div id="emailHelp" class="form-text">Non condivideremo mai la tua email con nessun altro.</div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-6">
+                  <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label"> </label>
+                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Telefono*">
+                  </div>
+               </div>
+               <div class="col-3">
+                  <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label"> </label>
+                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Città*">
+                  </div>
+               </div>
+               <div class="col-3">
+                  <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label"> </label>
+                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Provincia*">
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-6">
+                  <h3><b>Veicolo </b> </h3>
+               </div>
+               <div class="col-6">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-6">
+                  <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label"> </label>
+                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Marca e modello*">
+                  </div>
+               </div>
+               <div class="col-6">
+                  <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label"> </label>
+                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Anno di immatricolazione*">
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-3">
+                  <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label"> </label>
+                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Chilometraggio*">
+                  </div>
+               </div>
+               <div class="col-3">
+                  <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label"> </label>
+                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Cilindrata*">
+                  </div>
+               </div>
+               <div class="col-6"  >
+                  <select  class="form-select, assistenza" aria-label="Default select example">
+                     <option selected>Alimentazione*</option>
+                     <option value="1">Dieles</option>
+                     <option value="2">Gpl</option>
+                     <option value="3">Benzina</option>
+                     <option value="3">Metano</option>
+                     <option value="3">Altro</option>
+                  </select>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-6">
+                  <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label"> </label>
+                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Targa*">
+                  </div>
+               </div>
+               <!--style=" height:46px" -->
+               <div class="col-6">
+                  <select  class="form-select, assistenza" aria-label="Default select example">
+                     <option selected>Ultima manutenzione programmata*</option>
+                     <option value="1">Tutti in concessionario</option>
+                     <option value="2">solo fino a 30.000 km</option>
+                     <option value="3">solo fino a 60.000 km</option>
+                     <option value="3">solo fino a 90.000 km</option>
+                     <option value="3">solo fino a 120.000 km</option>
+                     <option value="3">Mai</option>
+                  </select>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-6">
+                  <h3><b>Prenotazione intervento </b> </h3>
+                  <div class="col-6">
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-6">
+                  <select  class="form-select, assistenza" aria-label="Default select example">
+                     <option selected>Tipo di intervento*</option>
+                     <option value="1">Batteria scarica</option>
+                     <option value="2">Cambio olio</option>
+                     <option value="3">Cinghia di distribuzione</option>
+                     <option value="3">Climatizzazione</option>
+                     <option value="3">Controllo frizione</option>
+                     <option value="3">Controllo per richiamo</option>
+                     <option value="3">Controllo per spie motore</option>
+                     <option value="3">Impianto elettrico</option>
+                     <option value="3">Impianto frenante</option>
+                     <option value="3">Tagliando semplice</option>
+                     <option value="3">Revisione veicolo</option>
+                     <option value="3">Sostituzione pneumatici</option>
+                     <option value="3">Altro</option>
+                  </select>
+               </div>
+               <div class="col-6">
+                  <input class="assistenza" type="datetime-local" />
+               </div>
+            </div>
+            
+            <div class="row">
+               <div class="col-6">
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                     Ho letto e accetto     
+                     </label>
+                     <a   class= "link-warning" href="privacy.html"> l'informativa privacy. </a>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                     <label class="form-check-label" for="flexCheckChecked">
+                     Acconsento al trattamento dei miei dati per finalità di marketing 
+                     </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary"> <a class= "link-warning" href="invio.html"><b>Invia </a> </b> </div></button>
+               </div>
+               <div class="col-6">					
+               </div>
+			   <div class="row">
+               <div class="col-12">
+                  <div class="form-floating">
+                     <textarea class="form-control" placeholder="Altre informazioni" id="floatingTextarea2" style="height: 100px"></textarea>
+                     <!--	<label for="floatingTextarea2">comments</label> -->
+                  </div>
+               </div>
+            </div>  
+            </div>
+      </main>
+      <footer>
+         <div class = "container">
+            <div class = "row scritte">
+               <div class= "col-3">
+                  <p>Via san Vito 2, Tito(PZ) <br> <a href="tel:+39 3773789261"> tel: +39 377 3789261</a>  <br> P.IVA 02168490767 <br> <a href = "mailto: email: car.cars2023@libero.it subject = subject text "> email: car.cars2023@libero.it </a> 
+                  </p>
+               </div>
+               <div class = "col-1 orangegray">
+               </div>
+               <div class = "col-1 grayorange">
+               </div>
+               <div class ="col-2">
+                  <p>Dati fiscali: <br> Via San Vito 2, 85050 Tito 
+                  </p>
+               </div>
+               <div class = "col-1 orangegray">
+               </div>
+               <div class = "col-1 grayorange">
+               </div>
+               <div class ="col-3">
+                  <a href="https://instagram.com/car.cars_s.r.l.s?">
+                  <img src="instagram.png" style="height: 60px;"/>
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=61551225394932">
+                  <img src="facebook3.png" style="height: 60px;"/>
+                  </a>
+                  <a href="https://wa.me/39 [3335288566]">
+                  <img src="whatsapp.png" style="height: 60px;"/>
+                  </a>
+               </div>
+            </div>
+            <div class = "row">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
+               </svg>
+               <p><b>&copy sito realizzato da Russillo Luca</b>	</p>
+            </div>
+         </div>
+         <!-- -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      </footer>
+</html>

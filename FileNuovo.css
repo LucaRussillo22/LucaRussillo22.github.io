@@ -1,0 +1,126 @@
+.caroselli{
+	width : 624px;
+	height : 832px;
+	
+}
+
+.titolo{
+	text-align : center;
+	color:orange;
+}
+
+.titolo1{
+	text-align : left;
+	color : orange;
+}
+.titolo2{
+	text-align : center;
+	color : black;
+	background-color: orange
+}
+
+.titolo3{
+	text-align : left;
+	color : orange;
+	font-size : 200%;
+}
+
+.new{	
+	margin:10px;
+	text-align : center;
+	color:orange;
+}
+.figure{
+	width : 500px;
+	height : 300px;
+}
+
+.telefono{
+	text-align : right;
+	color :red;
+}
+
+.scritte{
+	text-align : center;
+	color:black;
+}
+
+.accentramento{
+	text-align: center;
+}
+
+.stile{
+	border: 5px solid grey;
+	height: 500px;	
+	width:500px;
+	float:center;
+	margin:50px;
+}
+
+.gray{
+	background-image:linear-gradient(to top right, orange, gray);
+	/* al posto di up posso mette anche right, left */
+}
+.orangegray
+ {
+	background-image:linear-gradient(to right, orange, gray);
+	/* al posto di up posso mette anche right, left */
+}
+.grayorange {
+	background-image:linear-gradient(to right, gray, orange);	
+}
+
+.tabella{
+	background-image:linear-gradient(to left, gray, orange);	
+	/*background-image:orange;*/
+	color: black;
+	margin-top:150px;
+}
+
+.tabella1{
+	background-image:linear-gradient(to left, orange, gray);
+	color: black;
+	margin-top:150px;
+}
+
+.testo{
+	text-align: justify;
+	color:orange;
+}
+.assistenza{
+	width : 636px;
+	height : 46px;
+}
+
+.rosso{
+	color: red;
+	text-align: right
+}
+.nero{
+	color: black;
+	text-align: right
+}
+
+.venduta{
+	margin:10px;
+	text-align : center;
+	color : white;
+	background-color: red
+}
+
+main{
+	background-color: gray;
+
+}
+
+footer{
+	background-color: orange;
+}
+
+header{
+	background-color: gray;
+}
+body{
+		background-color: gray;
+
+}
