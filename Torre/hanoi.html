@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- PROF-->
+<html lang="it">
+	<head>
+		<title>La Torre di Hanoi</title>
+		<link rel="icon" type="image/png" href="favicon.png"> <!-- Inserimento della favicon vicino al titolo -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">	<!-- Integrazione CSS Bootstrap -->
+		<link rel="stylesheet" href="TorreHanoi.css" > <!-- Inserire al posto di mystyle.css il nome del file del proprio CSS -->
+		<style>
+			.disk {
+				height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<!-- Intestazione -->
+			<center><h1 class="titolo1"> <b>La Torre di Hanoi </b></h1></center>
+		</header>
+		<main>
+		<div class="container">
+
+		<!-- PROF-->
+		
+		<div class="row">
+			<div class="col-4">
+			<h3><b>COME SI GIOCA </b> </h3>
+			<hr>
+			<p class="testo">
+			Le regole del gioco sono due e molto semplici:<br>
+
+			1.Si può spostare solo il disco situato sulla sommità di una torre.<br>
+
+			2. Un disco più grande non può essere posato sopra un disco più piccolo.<br>
+
+			Lo scopo è quello di spostare tutti i dischi su un’altra asta in modo che risultino ancora disposti nello stesso ordine.
+			</p>
+					</div>
+			<div class="col-4">
+				<h3><b>HOW TO PLAY </b></h3>
+				<hr>
+				<p class="testo">
+					Only two simple rules:<br>
+
+					1.Only the disc located on the top of a tower can be moved.<br>
+
+					2. A larger disc cannot be placed on top of a smaller disc.<br>
+
+					The aim is to move all the discs to another shaft so that they are still arranged in the same order.
+					</p>
+				</div>
+			<div class="col-4">
+			<!--IMMAGINE TORRE DI HANOI -->
+			&ensp;
+                  <img src="Torre1.jpeg" class="immagine1"/>
+					</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+			&ensp;
+							<!--IMMAGINE TORRE DI HANOI -->
+			 <img src="Torre2.jpeg" class="immagine2"/>
+  
+					</div>
+					
+			<div class="col-4">
+				&ensp;
+				<h3><b>COSA FARE </b></h3>
+				<hr>
+				<p class="testo">
+				L’abilità del giocatore consiste nel compiere l’operazione richiesta nel minimo numero di mosse possibile.
+				Provare a giocare con 1, con 2, con 3 dischi e scrivere in ciascun caso qual è il numero minimo di mosse da compiere.
+				Poi aumentare ancora il numero dei dischi e annotare in una tabella i risultati ottenuti.
+				Cercare anche di descrivere la strategia che si deve seguire di volta in volta per ottenere il numero minimo di mosse.
+				</p>
+				</div>
+			<div class="col-4">
+				&ensp;
+				<h3><b>HOW TO START </b></h3>
+				<hr>
+				<p class="testo">
+				The player’s skill consists in carrying out the required operation in the minimum number of possible moves.
+				Try to play with 1, with 2, with 3 discs and write in each case what is the minimum number of moves to make.
+				Then increase the number of discs again and note the results obtained in a table.
+				Also try to describe the strategy you have to follow from time to time to get the minimum number of moves.
+				</p>
+					</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-5">
+				&ensp;
+				<h3 class="allineamento"><b>LA LEGENDA </b></h3>
+				<hr>	
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/xxxQoGbu92Q?si=MADHxNsrMDqBzTM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+					
+			<div class="col-2">	
+			&ensp;
+			</div>
+					
+			<div class="col-5">
+				&ensp;
+				<h3 class="allineamento"><b>ESEMPIO </b></h3>
+				<hr>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/AmtuKqC74tE?si=fgUDAx0j-AmtSIBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				
+				</div>
+			
+		</div>
+
+		<div class="row">
+		
+				<div class="col-4">
+				</div>
+					<div class="col-4">
+					<h2 style="top:150px"><b>PROVA A GIOCARE QUI !!! </b></h2>
+				</div>
+				<div class="col-4">
+				</div>
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-4">
+			</div>
+				<div class="col-4">
+					<h1><b>↓  ↓  ↓  ↓  ↓  ↓  ↓  ↓  ↓  ↓  ↓	↓  ↓  ↓</b></h1>	
+			</div> 
+			<div class="col-4">
+			</div>
+	
+		</div>
+		
+		
+		
+		
+		
+			<!-- Corpo -->
+				<div class="row">
+					<div id="pole1" class="col-4">						
+					</div>
+					<div id="pole2" class="col-4">
+					</div>
+					<div id="pole3" class="col-4">
+					</div>
+				</div>
+				<div class="row" style="margin-top:20px;">
+					<div class = "col-1 blugreen">
+					</div>
+				
+					<div class="col-2">
+						<center><button id="btn1" class="btn btn-primary" onclick="actionPole(1)">Prendi</button></center>
+					</div>
+					
+					<div class = "col-1 greenblu">
+					</div>
+					<div class = "col-1 blugreen">
+					</div>
+					
+					
+					
+					<div class="col-2">
+						<center><button id="btn2" class="btn btn-primary" onclick="actionPole(2)">Prendi</button></center>
+					</div>
+					
+					<div class = "col-1 greenblu">
+					</div>
+					<div class = "col-1 blugreen">
+					</div>
+					
+					
+					<div class="col-2">
+						<center><button id="btn3" class="btn btn-primary" onclick="actionPole(3)">Prendi</button></center>
+					</div>
+					
+					<div class = "col-1 greenblu">
+					</div>
+					
+					
+				</div>
+				<div class="row">
+					<div class="col-4"></div>
+					<div id="myHand" class="col-4"></div>
+					<div class="col-4"></div>
+				</div>
+			</div>
+			<!-- PROF-->
+			
+			<div class="row">
+			<div class = "col-2">
+				</div>
+				<div class="col-4">
+				&ensp;
+				<h3><b>LE TORRI DI HANOI </b></h3>
+					<p class="testo">
+					Il puzzle delle “Torri di Hanoi” è costituito da tre aste sulle quali è possibile disporre una serie di dischi di dimensioni crescenti. Nel caso più tipico, il gioco consiste nel ricostruire una torre ordinata di dischi su un’asta diversa da quella di partenza muovendo i dischi tra le aste senza mai porre un disco sopra uno di dimensioni minori.
+
+					Il puzzle fu inventato nel 1883 dal matematico francese Edouard Lucas che si firmò con lo pseudonimo di N. Claus de Siam.
+
+					Secondo l’autore il puzzle derivava da un’antica e curiosa leggenda orientale, probabilmente inventata da Lucas stesso. La leggenda narra che a Benares, durante il regno dell’imperatore Fo Hi, c’era un tempio che conteneva una cupola posta al centro del mondo. Sotto la cupola, al momento della creazione, Dio aveva posto tre aste e su una di esse aveva formato una torre di 64 dischi d’oro di dimensioni via via decrescenti. Dio aveva quindi dato il compito ad alcuni monaci di ricostruire la torre in un’altra posizione, spostando i dischi tra le aste senza mai mettere un disco sopra uno più piccolo. Quando i monaci avessero completato il loro compito, il mondo sarebbe finito.
+
+					Il puzzle delle “Torri di Hanoi” rappresenta un classico esempio di rebus matematico la cui soluzione diventa “esponenzialmente” complessa man mano che aumentano gli elementi in gioco. Basta infatti pensare che, se con 4 dischi la soluzione minima richiede solo 15 mosse, quando i dischi diventano 64 il numero minimo di mosse diventa eccezionalmente grande, pari a circa 20 miliardi di miliardi. Nel caso di numerosi dischi, la soluzione del puzzle diventa così intricata e complessa da risultare in pratica inaccessibile senza l’aiuto di un computer.
+
+					Esistono molte strategie per risolvere in modo automatico rebus di questo tipo: ad esempio l’algoritmo ricorsivo, che fornisce la soluzione minimale, o gli algoritmi di ricerca della soluzione sull’albero delle possibili configurazioni del problema.
+
+					Queste procedure rappresentano esempi di applicazione di tecniche di base utilizzate nel campo dell’Intelligenza Artificiale. L’Intelligenza Artificiale è quel settore dell’Informatica che si occupa si progettare sistemi hardware o software in grado di fornire prestazioni, che a un osservatore comune, sembrerebbero di pertinenza esclusiva dell’intelligenza umana. Un esempio di queste capacità è proprio l’abilità nel risolvere “complicati” rebus matematici.</p>
+				
+				</div>
+				
+				<div class = "col-4" style="margin-top: 200px">
+					&ensp;
+					<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+					<h2 class="accordion-header">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					Come Funziona
+						</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					<strong>Il funzionamento delle torri di Hanoi</strong> 
+					<p>Il puzzle delle “Torri di Hanoi” è costituito da tre aste sulle quali è possibile disporre una serie di dischi di dimensioni crescenti. Nel caso più tipico, il gioco consiste nel ricostruire una torre ordinata di dischi su un’asta diversa da quella di partenza muovendo i dischi tra le aste senza mai porre un disco sopra uno di dimensioni minori.</p>
+					</div>
+					</div>
+					</div>
+					<div class="accordion-item">
+					<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					Chi la invento
+					</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					  <div class="accordion-body">
+						<strong>Chi invento la torre di Hanoi</strong>Il gioco fu inventato nel 1883 dal matematico francese Édouard Lucas che diffuse il gioco sotto lo pseudonimo di N. Claus de Siam, mandarino del collegio di Li-Sou-Stian. La leggenda secondo la quale in un tempio Indù alcuni monaci sono costantemente impegnati a spostare su tre colonne di diamante 64 dischi d'oro secondo le regole della Torre di Hanoi (a volte chiamata Torre di Brahmā), è stata inventata dalla ditta che per prima ha messo in commercio il rompicapo. La leggenda narra che quando i monaci completeranno il lavoro, il mondo finirà. Il numero minimo di mosse necessarie per risolvere il gioco equivale infatti a 2 elevato al numero di dischi meno 1. I monaci della leggenda dovranno quindi compiere 18.446.744.073.709.551.615 mosse (264 - 1), compiendo una mossa al secondo il mondo finirà tra 5.845.580.504 secoli.
+					  </div>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<h2 class="accordion-header">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						Da dove deriva
+					  </button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					  <div class="accordion-body">
+						<strong>Da dove deriva </strong> Secondo l’autore il puzzle derivava da un’antica e curiosa leggenda orientale, probabilmente inventata da Lucas stesso. La leggenda narra che a Benares, durante il regno dell’imperatore Fo Hi, c’era un tempio che conteneva una cupola posta al centro del mondo. Sotto la cupola, al momento della creazione, Dio aveva posto tre aste e su una di esse aveva formato una torre di 64 dischi d’oro di dimensioni via via decrescenti. Dio aveva quindi dato il compito ad alcuni monaci di ricostruire la torre in un’altra posizione, spostando i dischi tra le aste senza mai mettere un disco sopra uno più piccolo. Quando i monaci avessero completato il loro compito, il mondo sarebbe finito.
+					  </div>
+					</div>
+				  </div>
+				  
+				  <div class="accordion-item">
+					<h2 class="accordion-header">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						Storia
+					  </button>
+					</h2>
+					<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					  <div class="accordion-body">
+						<strong>Da dove deriva il nome </strong> Le torri di Hanoi sono un famoso rompicapo matematico e di logica. Furono inventate dal matematico francese Eduard Lucas nel 1883 e prendono il nome della città di Hanoi, in Vietnam 
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				</div>
+				
+				<div class = "col-2">
+				</div>
+
+			</div>
+			
+			
+			
+		<!-- PROF-->	
+		</main>
+		<footer>
+			<!-- Pedice -->
+			<center><p> <b>&copy; Luca Russillo </b></p></center>
+	
+		</footer>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!-- Integrazione Javascript Bootstrap -->
+	<script>
+		var pole1 = [1,2,3,4];
+		var pole2 = [];
+		var pole3 = [];
+		var mano = 0;
+		
+		drawScene();
+		
+		function drawScene(){
+			drawPoles();
+			drawHand();
+			checkButtons();
+		}
+		
+		function drawPoles(){
+			for(let i=1;i<4;i++){
+				drawPole(getPole(i), getDivPole(i));
+			}
+		}
+		
+		function getDivPole(n){
+			return document.getElementById("pole"+n);
+		}
+		
+		function drawPole(pole, div){
+			div.innerHTML = "";
+			for(let i=0; i<pole.length; i++){
+				div.innerHTML+=drawDisk(pole[i]);
+			}
+		}
+		
+		function checkButtons(){
+			for(let i=1;i<4;i++)
+				checkButton(i);
+		}	
+
+		function getPole(n){
+			switch(n){
+				case 1: return pole1;
+				case 2: return pole2;
+				case 3: return pole3;
+			}
+		}
+		
+		function checkButton(n){
+			let button = document.getElementById("btn" + n);
+			let pole = getPole(n);
+			if(mano==0){
+				button.innerText = "Prendi";
+				button.disabled = pole.length == 0;
+			} else {
+				button.innerText = "Metti";				
+				button.disabled = pole.length > 0 ? pole[0] < mano : false;			
+			}
+		}
+		
+		function drawHand(){
+			let handDiv = document.getElementById("myHand");
+			handDiv.innerHTML = drawDisk(mano);
+		}
+		
+		function actionPole(n){
+			if(mano==0){
+				mano = getPole(n).shift();
+			} else {
+				getPole(n).unshift(mano);
+				mano = 0;
+			}
+			drawScene();
+		}
+		
+		function getColor(dimension){
+			let color = "#FF0000";
+			switch(dimension){
+				case 1: color = "#000000"; break;
+				case 2: color = "#0000FF"; break;	/* "#0000FF"*/	
+				case 3: color = "#ffff00"; break;
+			}
+			return color;
+		}
+		
+		function drawDisk(dimension){
+			let color = getColor(dimension);
+			return '<div class="disk" style="background-color:'+color+'; width:'+dimension*10+'%;"></div>';
+		}
+	</script>
+</html>
+<!-- PROF-->

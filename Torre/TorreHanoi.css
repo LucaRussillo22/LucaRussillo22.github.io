@@ -1,0 +1,62 @@
+.titolo{
+	background-color: #0099ff;
+	color: #009933;
+}
+
+.titolo1{
+	background-color: #00cc66;
+	color: black;
+}
+
+
+.usomio{
+	margin-top: 50px
+}
+
+
+
+.testo{
+	text-align: justify;
+}
+
+
+.immagine1{
+	height: 180px;
+	margin: 20px;
+}
+
+.immagine2{
+	height: 210px; 
+	margin: 20px;
+}
+
+.allineamento{
+	text-align: center;
+}
+.greenblu{
+	background-image:linear-gradient(to right, #00cc66,  #0099ff);
+	/* al posto di up posso mette anche right, left */
+}
+
+.blugreen {
+	background-image:linear-gradient(to right, #0099ff, #00cc66);	
+}
+
+main{
+	background-color: #00cc66;
+	color: black;
+}
+
+footer{
+	background-color: #00cc66;
+	color: black;
+}
+
+header{
+	background-color: #00cc66;
+	color: black;
+}
+body{
+		background-color: #00cc66;
+	color: black;
+}

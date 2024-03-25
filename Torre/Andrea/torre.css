@@ -1,0 +1,68 @@
+.titolo{
+	background-color: #0099ff;
+	color: #009933;
+}
+
+.titolo1{
+	background-color: #ff9900;
+	color: black;
+}
+
+.immagine1{
+	margin: 30px;
+	height: 300px;
+	width: 250px;
+
+}
+
+.immagine2{
+	text-align: center;
+	height: 300px;
+	width: 600px;
+
+}
+
+.immagine3{
+	text-align: center;
+	height: 250px;
+	width: 580px;
+}
+
+
+.testo{
+	text-align: justify;
+}
+
+
+
+.allineamento{
+	text-align: center;
+}
+
+
+.allineamento1{
+	background-color: black;
+	color:orange;
+		text-align: center;
+
+}
+
+
+main{
+	background-color: #ff9900;
+	color: black;
+}
+
+footer{
+	background-color: #ff9900;
+	color: black;
+}
+
+header{
+	background-color: #ff9900;
+	color: black;
+}
+body{
+		background-color: #ff9900;
+	color: black;
+}
