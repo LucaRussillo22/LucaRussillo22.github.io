@@ -121,6 +121,9 @@ header{
 	background-color: gray;
 }
 body{
-		background-color: gray;
-
+	background-color: gray;
+}
+html {
+	padding: 20px;
+	background-color: gray;
 }
