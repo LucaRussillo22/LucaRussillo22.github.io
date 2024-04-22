@@ -1,3 +1,31 @@
+.titolo{
+	text-align:center;
+	color: black;
+}
+.testo{
+		text-align:center;
+
+}
+.striscia{
+	background-color:red;
+}
+.centro{
+	text-align:center;
+
+}
+.immagineCalcio{
+	height: 250px;
+	width: 400px;
+}
+.immagineOmino{
+	height: 250px;
+	width: 400px;
+}
+.immagineLibreria{
+	height: 250px;
+	width: 400px;
+	
+}
 .BluBluscuro{
 	background-image:linear-gradient(to left, #3399ff, #0000ff);	
 	/*background-image:orange;*/
@@ -29,6 +57,17 @@
 }
 .nero{
 	color: black;
+
+}
+
+.immagineIta{
+	height: 26px;
+	width: 50px;
+}
+
+.immagineIng{
+	height: 25px;
+	width: 50px;
 
 }
 
